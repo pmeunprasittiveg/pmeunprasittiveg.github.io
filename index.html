@@ -60,13 +60,58 @@
             font-size: 0.95rem;
             font-weight: 500;
             color: var(--accent-orange);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
 
-        section {
+        /* Tabs Navigation styling */
+        .tabs-nav {
+            display: flex;
+            gap: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             margin-bottom: 2rem;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            padding: 0.75rem 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-main);
+        }
+
+        .tab-btn.active {
+            color: var(--accent-orange);
+        }
+
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--accent-orange);
+        }
+
+        /* Tab Content Display Logic */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .tab-content.active {
+            display: block;
         }
 
         p {
@@ -100,9 +145,6 @@
             color: var(--text-main);
             margin-bottom: 0.75rem;
             font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
         }
 
         .tag-list {
@@ -120,8 +162,21 @@
             font-weight: 500;
         }
 
+        /* Project Item Layout */
+        .project-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .project-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
+            from { opacity: 0; transform: translateY(5px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
@@ -140,37 +195,87 @@
             <div class="role-badge">Incoming Technology Consulting Associate @ PwC</div>
         </header>
 
-        <section>
-            <p>
-                Over the course of my academic career, I took coursework in <strong>big data infrastructures, business strategy, causal inference, machine learning, international relations, operations management,</strong> and <strong>statistical modeling</strong>. 
-            </p>
-            <p>
-                My professional journey includes diverse experiences spanning <strong>small business consulting, social science research, diplomatic service,</strong> and <strong>student teaching</strong>.
-            </p>
-            <p>
-                I earned both my M.S. and B.A. from the <strong>University of Illinois Urbana-Champaign</strong>. Expanding my global perspective, I also spent a final undergraduate semester studying abroad at <strong>National Tsing Hua University</strong>.
-            </p>
-        </section>
+        <nav class="tabs-nav">
+            <button class="tab-btn active" onclick="switchTab('about')">About Me</button>
+            <button class="tab-btn" onclick="switchTab('projects')">Projects</button>
+            <button class="tab-btn" onclick="switchTab('miscellaneous')">Miscellaneous</button>
+        </nav>
 
-        <div class="grid-container">
-            <div class="grid-box">
-                <h3> Interests & Hobbies</h3>
-                <div class="tag-list">
-                    <span class="tag">Reading</span>
-                    <span class="tag">Instagram Recipes</span>
-                    <span class="tag">Biking</span>
-                    <span class="tag">Traveling</span>
-                    <span class="tag">Weight Training</span>
-                    <span class="tag">Music</span>
+        <div id="about" class="tab-content active">
+            <section>
+                <p>
+                    Over the course of my academic career, I took coursework in <strong>big data infrastructures, business strategy, causal inference, machine learning, international relations, operations management,</strong> and <strong>statistical modeling</strong>. 
+                </p>
+                <p>
+                    My professional journey includes diverse experiences spanning <strong>small business consulting, social science research, diplomatic service,</strong> and <strong>student teaching</strong>.
+                </p>
+                <p>
+                    I earned both my M.S. and B.A. from the <strong>University of Illinois Urbana-Champaign</strong>. Expanding my global perspective, I also spent a final undergraduate semester studying abroad at <strong>National Tsing Hua University</strong>.
+                </p>
+            </section>
+
+            <div class="grid-container">
+                <div class="grid-box">
+                    <h3>Interests & Hobbies</h3>
+                    <div class="tag-list" style="margin-top: 0.75rem;">
+                        <span class="tag">Reading</span>
+                        <span class="tag">Instagram Recipes</span>
+                        <span class="tag">Biking</span>
+                        <span class="tag">Traveling</span>
+                        <span class="tag">Weight Training</span>
+                        <span class="tag">Music</span>
+                    </div>
+                </div>
+                
+                <div class="grid-box">
+                    <h3>Contact & Links</h3>
+                    <p style="font-size: 0.9rem; margin-top: 0.75rem; margin-bottom: 0;">Feel free to explore my repository or connect to collaborate on data-driven strategy and technical architecture.</p>
                 </div>
             </div>
-            
+        </div>
+
+        <div id="projects" class="tab-content">
+            <div class="project-item">
+                <h3><strong style="color: var(--accent-orange);">Real-Time Data Streaming Architecture</strong></h3>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Designed a cloud-native real-time streaming pipeline using AWS Kinesis, Lambda, S3, Glue, and Athena to capture, transform, and analyze big data streams cleanly.</p>
+            </div>
+            <div class="project-item">
+                <h3><strong style="color: var(--accent-orange);">Interactive Analytical Dashboard</strong></h3>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Developed a reactive analytical application parsing web data to build robust filtering interfaces and uncover localized commercial trends.</p>
+            </div>
+            <div class="project-item">
+                <h3><strong style="color: var(--accent-orange);">Predictive Property Assessment Modeling</strong></h3>
+                <p style="margin-top: 0.5rem; margin-bottom: 0;">Utilized advanced machine learning frameworks and statistical programming tools to evaluate large-scale regional real estate assessment values.</p>
+            </div>
+        </div>
+
+        <div id="miscellaneous" class="tab-content">
+            <div class="grid-box" style="margin-bottom: 1.5rem;">
+                <h3>Global & Cultural Studies</h3>
+                <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem;">Explored diverse historical architectures and institutional frameworks while spending time in cultural hubs across Western Europe and East Asia.</p>
+            </div>
             <div class="grid-box">
-                <h3> Contact & Links</h3>
-                <p style="font-size: 0.9rem; margin: 0;"> Feel free to explore my repository or connect to collaborate on data-driven strategy and technical architecture.</p>
+                <h3>Interdisciplinary Research</h3>
+                <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 0.95rem;">Engaged in evaluating computational social science platforms, focusing on how systemic organizational strategies and international relations intersect.</p>
             </div>
         </div>
     </div>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Deactivate all tab buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Show current tab content and activate button
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 
 </body>
 </html>
