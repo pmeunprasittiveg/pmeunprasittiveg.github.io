@@ -8,14 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg-color: #ffffff;
-            --text-main: #111111;
-            --text-muted: #666666;
-            --border-color: #e5e5e5;
-            --tab-active: #000000;
-        }
-
         * {
             box-sizing: border-box;
             margin: 0;
@@ -24,8 +16,8 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            background-color: #ffffff !important;
+            color: #111111 !important;
             line-height: 1.6;
             padding: 4rem 2rem;
             display: flex;
@@ -46,6 +38,7 @@
         header h1 {
             font-size: 2rem;
             font-weight: 700;
+            color: #111111;
             letter-spacing: -0.02em;
             margin-bottom: 0.25rem;
         }
@@ -53,21 +46,21 @@
         .role-badge {
             font-size: 0.95rem;
             font-weight: 400;
-            color: var(--text-muted);
+            color: #555555;
         }
 
         /* Minimalist Tabs Navigation */
         .tabs-nav {
             display: flex;
             gap: 2rem;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid #e5e5e5;
             margin-bottom: 2.5rem;
         }
 
         .tab-btn {
             background: none;
             border: none;
-            color: var(--text-muted);
+            color: #777777;
             font-family: 'Inter', sans-serif;
             font-size: 0.95rem;
             font-weight: 500;
@@ -78,11 +71,11 @@
         }
 
         .tab-btn:hover {
-            color: var(--text-main);
+            color: #111111;
         }
 
         .tab-btn.active {
-            color: var(--tab-active);
+            color: #000000;
             font-weight: 600;
         }
 
@@ -92,8 +85,8 @@
             bottom: -1px;
             left: 0;
             width: 100%;
-            height: 1.5px;
-            background-color: var(--tab-active);
+            height: 2px;
+            background-color: #000000;
         }
 
         /* Tab Content Toggle */
@@ -106,7 +99,7 @@
         }
 
         p {
-            color: var(--text-main);
+            color: #111111;
             font-size: 1rem;
             margin-bottom: 1.25rem;
             font-weight: 400;
@@ -125,7 +118,7 @@
 
         .list-item {
             padding-bottom: 1.5rem;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid #e5e5e5;
         }
 
         .list-item:last-child {
@@ -135,18 +128,19 @@
         .list-item h3 {
             font-size: 1.1rem;
             font-weight: 600;
+            color: #111111;
             margin-bottom: 0.5rem;
         }
 
         .list-item p {
-            color: var(--text-muted);
+            color: #555555;
             font-size: 0.95rem;
             margin: 0;
         }
 
         .meta-info {
             font-size: 0.85rem;
-            color: var(--text-muted);
+            color: #777777;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             margin-bottom: 0.25rem;
@@ -166,4 +160,86 @@
 </head>
 <body>
 
-    <div class
+    <div class="container">
+        <header>
+            <h1>Paroon TJ Meunprasittiveg</h1>
+            <div class="role-badge">Incoming Technology Consulting Associate @ PwC</div>
+        </header>
+
+        <nav class="tabs-nav">
+            <button class="tab-btn active" onclick="switchTab('about')">About Me</button>
+            <button class="tab-btn" onclick="switchTab('projects')">Projects</button>
+            <button class="tab-btn" onclick="switchTab('research')">Research</button>
+        </nav>
+
+        <div id="about" class="tab-content active">
+            <section>
+                <p>
+                    Over the course of my academic career, I took coursework in <strong>big data infrastructures, business strategy, causal inference, machine learning, international relations, operations management,</strong> and <strong>statistical modeling</strong>. 
+                </p>
+                <p>
+                    My professional journey includes diverse experiences spanning <strong>small business consulting, social science research, diplomatic service,</strong> and <strong>student teaching</strong>.
+                </p>
+                <p>
+                    I earned both my M.S. and B.A. from the <strong>University of Illinois Urbana-Champaign</strong>. Expanding my global perspective, I also spent a final undergraduate semester studying abroad at <strong>National Tsing Hua University</strong>.
+                </p>
+                <p style="color: #555555; margin-top: 2rem; font-size: 0.95rem;">
+                    In my free time, I enjoy reading, trying out Instagram recipes, biking, traveling, weight training, and listening to music with friends.
+                </p>
+            </section>
+        </div>
+
+        <div id="projects" class="tab-content">
+            <div class="item-list">
+                <div class="list-item">
+                    <div class="meta-info">Cloud Infrastructure</div>
+                    <h3>Real-Time Data Streaming Architecture</h3>
+                    <p>Designed a cloud-native real-time streaming pipeline using AWS Kinesis, Lambda, S3, Glue, and Athena to capture, transform, and analyze big data streams cleanly.</p>
+                </div>
+                <div class="list-item">
+                    <div class="meta-info">Data Analytics</div>
+                    <h3>Interactive Analytical Dashboard</h3>
+                    <p>Developed a reactive analytical application parsing web data to build robust filtering interfaces and uncover localized commercial trends.</p>
+                </div>
+                <div class="list-item">
+                    <div class="meta-info">Machine Learning</div>
+                    <h3>Predictive Property Assessment Modeling</h3>
+                    <p>Utilized advanced machine learning frameworks and statistical programming tools to evaluate large-scale regional real estate assessment values.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="research" class="tab-content">
+            <div class="item-list">
+                <div class="list-item">
+                    <div class="meta-info">Computational Social Science</div>
+                    <h3>Interdisciplinary Research Systems</h3>
+                    <p>Engaged in evaluating computational social science platforms, focusing on how systemic organizational strategies and international relations intersect.</p>
+                </div>
+                <div class="list-item">
+                    <div class="meta-info">Global Frameworks</div>
+                    <h3>Institutional & Cultural Architecture</h3>
+                    <p>Explored diverse historical architectures and institutional frameworks while spending time analyzing cultural and structural hubs across Western Europe and East Asia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            // Deactivate all tab buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Show current tab content and activate button
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
