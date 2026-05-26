@@ -1,1 +1,1 @@
-# Ping Meunprasittiveg's Personal Repository (Sandbox and Learning Lab)
+# Ping Meunprasittiveg's Sandbox and Learning Lab
