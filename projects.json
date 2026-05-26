@@ -2,16 +2,19 @@
   {
     "category": "Cloud Infrastructure",
     "title": "Real-Time Data Streaming Architecture",
-    "description": "Designed a cloud-native real-time streaming pipeline using AWS Kinesis, Lambda, S3, Glue, and Athena to capture, transform, and analyze big data streams cleanly."
+    "description": "Designed a cloud-native real-time streaming pipeline using AWS Kinesis, Lambda, S3, Glue, and Athena to capture, transform, and analyze big data streams cleanly.",
+    "link": "https://github.com/yourusername/your-repository-name"
   },
   {
     "category": "Data Analytics",
-    "title": "Interactive Analytical Dashboard",
-    "description": "Developed a reactive analytical application parsing web data to build robust filtering interfaces and uncover localized commercial trends."
+    "title": "World Bank Projects in Taiwan - R Shiny Application",
+    "description": "Developed a R Shiny application utilizing dplyr, tidyverse, and ggplot2 to visualize World Bank project trends in Taiwan, allowing researchers to interact with archival data and derive policy prescriptions on determining loan rates.",
+    "link": "https://8jafbe-paroon-meunprasittiveg.shinyapps.io/WorldBankProjectsTaiwan/"
   },
   {
     "category": "Machine Learning",
     "title": "Predictive Property Assessment Modeling",
-    "description": "Utilized advanced machine learning frameworks and statistical programming tools to evaluate large-scale regional real estate assessment values."
+    "description": "Utilized advanced machine learning frameworks and statistical programming tools to evaluate large-scale regional real estate assessment values.",
+    "link": ""
   }
 ]
