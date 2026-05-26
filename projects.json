@@ -1,0 +1,17 @@
+[
+  {
+    "category": "Cloud Infrastructure",
+    "title": "Real-Time Data Streaming Architecture",
+    "description": "Designed a cloud-native real-time streaming pipeline using AWS Kinesis, Lambda, S3, Glue, and Athena to capture, transform, and analyze big data streams cleanly."
+  },
+  {
+    "category": "Data Analytics",
+    "title": "Interactive Analytical Dashboard",
+    "description": "Developed a reactive analytical application parsing web data to build robust filtering interfaces and uncover localized commercial trends."
+  },
+  {
+    "category": "Machine Learning",
+    "title": "Predictive Property Assessment Modeling",
+    "description": "Utilized advanced machine learning frameworks and statistical programming tools to evaluate large-scale regional real estate assessment values."
+  }
+]
