@@ -1,10 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My GitHub Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paroon TJ Meunprasittiveg | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-orange: #ff5c35; /* Inspired by PwC's palette */
+            --card-bg: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 750px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .role-badge {
+            display: inline-block;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--accent-orange);
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        p strong {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .grid-box {
+            background: rgba(15, 23, 42, 0.4);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .grid-box h3 {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: rgba(255, 92, 53, 0.1);
+            color: var(--accent-orange);
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 1.75rem; }
+            header h1 { font-size: 2rem; }
+            .grid-container { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my brand new GitHub Pages website.</p>
+
+    <div class="container">
+        <header>
+            <h1>Paroon TJ Meunprasittiveg</h1>
+            <div class="role-badge">Incoming Technology Consulting Associate @ PwC</div>
+        </header>
+
+        <section>
+            <p>
+                Over the course of my academic career, I took coursework in <strong>big data infrastructures, business strategy, causal inference, machine learning, international relations, operations management,</strong> and <strong>statistical modeling</strong>. 
+            </p>
+            <p>
+                My professional journey includes diverse experiences spanning <strong>small business consulting, social science research, diplomatic service,</strong> and <strong>student teaching</strong>.
+            </p>
+            <p>
+                I earned both my M.S. and B.A. from the <strong>University of Illinois Urbana-Champaign</strong>. Expanding my global perspective, I also spent a final undergraduate semester studying abroad at <strong>National Tsing Hua University</strong>.
+            </p>
+        </section>
+
+        <div class="grid-container">
+            <div class="grid-box">
+                <h3> Interests & Hobbies</h3>
+                <div class="tag-list">
+                    <span class="tag">Reading</span>
+                    <span class="tag">Instagram Recipes</span>
+                    <span class="tag">Biking</span>
+                    <span class="tag">Traveling</span>
+                    <span class="tag">Weight Training</span>
+                    <span class="tag">Music</span>
+                </div>
+            </div>
+            
+            <div class="grid-box">
+                <h3> Contact & Links</h3>
+                <p style="font-size: 0.9rem; margin: 0;"> Feel free to explore my repository or connect to collaborate on data-driven strategy and technical architecture.</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
