@@ -22,5 +22,17 @@
     "title": "Predictive Property Assessment Modeling",
     "description": "Utilized advanced machine learning frameworks (random forests) and statistical programming tools (R) to evaluate large-scale regional real estate assessment values.",
     "link": ""
+  }, 
+  {
+    "category": "Business Data Analytics",
+    "title": "Restaurant Business Analytics Project",
+    "description": "Leveraged Excel to evaluate sales revenue and profit margins across third-party delivery services and restaurant website, helping the business identify top-performing platforms and implement promotion tactics to boost direct sales. Conducted time-series analysis on consumer preferences and spending patterns, utilizing monthly purchasing trends to enhance pricing strategies and increase marketing campaigns around menu items with high customer demand.",
+    "link": ""
+  },
+  {
+    "category": "Data Visualization",
+    "title": "Military and Education Expenditure - R Shiny Application",
+    "description": "Cleaned, wrangled, and standardized large-scale World Bank datasets using dplyr and tidyverse, resolving missing values, formatting inconsistencies, and duplicate entries to ensure high-quality, reliable data for economic analysis. Created visualizations with ggplot2 to illustrate trends in military expenditure (1960–2019) and explored correlations between education spending and unemployment (2022), highlighting regional disparities and policy-relevant insights.",
+    "link": "http://8jafbe-paroon-meunprasittiveg.shinyapps.io/STAT385_Shiny_App"
   }
 ]
