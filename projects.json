@@ -6,12 +6,6 @@
     "link": "https://preview--company-snapshot-spark.lovable.app/?__lovable_token=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidVR5R1dUcUVTcldiRHZ2aUIxb2ZaaW1nTDZIMiIsInByb2plY3RfaWQiOiJjOGQyNTFkNi02MTkzLTQyNzYtYmM2My1hYjAwMzJlOWM0YWEiLCJhY2Nlc3NfdHlwZSI6InByb2plY3QiLCJpc3MiOiJsb3ZhYmxlLWFwaSIsInN1YiI6ImM4ZDI1MWQ2LTYxOTMtNDI3Ni1iYzYzLWFiMDAzMmU5YzRhYSIsImF1ZCI6WyJsb3ZhYmxlLWFwcCJdLCJleHAiOjE3ODAzNzc5NzIsIm5iZiI6MTc3OTc3MzE3MiwiaWF0IjoxNzc5NzczMTcyfQ.Te2NIeJAYSzyBxy_ELw774mIXPwwQ3AQ-vBYOSFIQzpZpi0GxnxdApuR6CzcvU0xWVgjONajKRpcFOW2vbhQ8-4eNcxQKgAlgKw3Oy2HITqTy6gbRYF9hbrp7-WRPAev1Xu5c8zQOzms8FBe911y9IaSxt6H6oJDuhIIStTpXekUTyclJvvLLgAlsDBw-l5zl7h8TjSSJ85v_xGBMLhz_76DfLJzhtxU3V4FUq6UJIPB0p_lSPKZ0JhmVGPHHwT7hXXFK5mFsaJo98-_x5dY0FGn0GXE6GFL4lT4SxhmvS2tm7AHaZIWupNYXXzwE8cZfSRy8cKwts6_NE5nRVCS7QcnaaNbftXCugr91I49ptbiREnnrrZQEvC0ZB2b8_HDNjVVNc-ylYOoCIQVWSl6XCNPh1w7P5rnohprkDIJl5it4tPuBN1iHNUMZqd9QZIUTQ7go4ZN3P5BLQiaBXsL4iHRPf2QLUg4y3lmRR6245-gKkS1oVY8ob9C0-4j5Z4zlEiHxVAPg2r7HIcw6bgXmJMtmVC17l2LEI53kiFs-uL857ZOoMHTufAnq2vRDWPzqhqljGjTy5fc1fASIS9oOR--KXy7aXiGr0RjMpl37XgG1LLDhPflu6DlaAvrmp_5juJEH7pKZFoKaTJAcYtMYEtkocnMTD9vwlmZkQsbDhU"
   },
   {
-    "category": "Cloud Infrastructure",
-    "title": "Real-Time Data Streaming Architecture",
-    "description": "Designed a cloud-native real-time streaming pipeline using AWS Kinesis, Lambda, S3, Glue, and Athena to capture, transform, and analyze big data streams cleanly.",
-    "link": "https://github.com/yourusername/your-repository-name"
-  },
-  {
     "category": "Foreign Aid and Sector Development",
     "title": "World Bank Projects in Taiwan - R Shiny Application",
     "description": "Developed a R Shiny application utilizing dplyr, tidyverse, and ggplot2 to visualize World Bank project trends in Taiwan, allowing researchers to interact with archival data and derive policy prescriptions on determining loan rates.",
